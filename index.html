@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet" />
 </head>
 
@@ -25,7 +24,7 @@
             <h5>cohort5@azubiafrica.org</h5>
           </div>
           <div>
-            <img src="./assests/SVG/phone.svg" slt="phone" />
+            <img src="./assests/SVG/phone.svg" alt="phone" />
             <h5>+233 1234 56 79</h5>
           </div>
         </div>
@@ -45,33 +44,23 @@
         </div>
         <div class="nav-toggle" onclick="toggleNav()">☰</div>
         <div class="nav-menu" id="navLinks">
-          <div class="nav-close" onclick="closeNav()">✕</div>
-          <ul>
-            <li>
-              <a class="nav-link" href="/">Home </a>
-            </li>
-            <li>
-              <a class="nav-link" href="#About">About Us</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#video">Video</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#Contact">Contact</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#partner">Partners</a>
-            </li>
-          </ul>
+          <div class="navshow">
+            <div class="nav-close" onclick="closeNav()">✕</div>
+            <ul class="links">
+              <li><a class="nav-link" href="/">Home </a></li>
+              <li><a class="nav-link" href="#About" onclick="closeNav()">About Us</a></li>
+              <li><a class="nav-link" href="#services" onclick="closeNav()">Services</a></li>
+              <li><a class="nav-link" href="#video" onclick="closeNav()">Video</a></li>
+              <li><a class="nav-link" href="#Contact" onclick="closeNav()">Contact</a></li>
+              <li><a class="nav-link" href="#partner" onclick="closeNav()">Partners</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="overlay" onclick="toggleNav()"></div>
-      </div>
     </nav>
   </header>
+  <button id="scrollUpBtn" onclick="scrollToTop()">↑</button>
   <section class="hero">
     <div class="hero-item">
       <div>
@@ -103,7 +92,7 @@
       </div>
       <div>
         <h4>Document Review</h4>
-        <div><img src="./assests/SVG/file-text.svg" alt="home" /></div>
+        <div><img src="./assests/SVG/file-text.svg" alt="file" /></div>
         <p>At vero eos et accusamus et
           iusto odio dignissimos ducimus
           qui blanditiis praesentium
@@ -111,7 +100,7 @@
       </div>
       <div>
         <h4>Expert Attorney</h4>
-        <div><img src="./assests/SVG/anchor.svg" alt="home" /></div>
+        <div><img src="./assests/SVG/anchor.svg" alt="anchor" /></div>
         <p>At vero eos et accusamus et
           iusto odio dignissimos ducimus
           qui blanditiis praesentium
@@ -119,7 +108,7 @@
       </div>
       <div>
         <h4>Case Dismissed</h4>
-        <div><img src="./assests/SVG/bell.svg" alt="home" /></div>
+        <div><img src="./assests/SVG/bell.svg" alt="bell" /></div>
         <p>At vero eos et accusamus et
           iusto odio dignissimos ducimus
           qui blanditiis praesentium
@@ -127,7 +116,7 @@
       </div>
     </div>
   </section>
-  <section id="about">
+  <section id="About">
     <div class="about">
       <div class="about-img">
         <img src="./assests/IMG/about img.jpg" alt="about" class="img" />
@@ -192,7 +181,7 @@
       </div>
     </div>
   </section>
-  <section id="contact">
+  <section id="Contact">
     <div class="contact">
       <div class="contact-item">
         <div>
@@ -256,13 +245,13 @@
       </div>
     </div>
   </section>
-  <section>
+  <section id="Partner">
     <div class="partner">
       <div class="partners">
         <div>
-        <h5>Our Partners</h5>
-        <hr>
-      </div>
+          <h5>Our Partners</h5>
+          <hr>
+        </div>
         <h2>Trusted By Many Front Line Teams Everywhere </h2>
       </div>
       <div>
@@ -275,6 +264,84 @@
       </div>
     </div>
   </section>
+  <footer>
+    <div class="footer-item">
+      <div class="footer-logo">
+        <div>
+          <img src="./assests/SVG/logo-white 1.svg" alt="logo" />
+        </div>
+        <div>
+          <p>At vero eos et accusamus et iusto odio dignissimos
+            ducimus qui blanditiis praesentium voluptatum
+            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+            similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+            rerum.</p>
+        </div>
+        <div>
+          <a href="#"><img src="./assests/SVG/Group 20.svg" alt="facebook" /></a>
+          <a href="#"><img src="./assests/SVG/Group 21.svg" alt="twitter" /></a>
+          <a href="#"><img src="./assests/SVG/Group 22.svg" alt="instagram" /></a>
+        </div>
+      </div>
+      <div class="footer-quick footer">
+        <div>
+          <p>Quick Links</p>
+          <hr>
+        </div>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#about">About Us</a></li>
+          <li><a href="/#service">Our Services</a></li>
+          <li><a href="/#case">Case Study</a></li>
+          <li><a href="/#blog">Our Blog</a></li>
+          <li><a href="/#client">Client Review</a></li>
+        </ul>
+      </div>
+      <div class="footer-service footer">
+        <div>
+          <p>Services</p>
+          <hr>
+        </div>
+        <ul class="footer-links">
+          <li><a href="/">Civil Law</a></li>
+          <li><a href="/#about">Family Law</a></li>
+          <li><a href="/#service">Cyber Law</a></li>
+          <li><a href="/#case">Education Law</a></li>
+          <li><a href="/#blog">Business Law</a></li>
+          <li><a href="/#client">Investment Law</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact footer">
+        <div>
+          <p>Contact Info</p>
+          <hr>
+        </div>
+        <ul class="footer-info">
+          <li>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <h6>+233 1234 56 79</h6>
+          </li>
+          <li>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <h6>cohort5@azubiafrica.org</h6>
+          </li>
+          <li>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <h6>North Legon - Accra, Ghana</h6>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="year">
+      <p>
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        &copy; cohort5, All right reserved
+      </p>
+    </div>
+  </footer>
   <script src="index.js"></script>
 </body>
 
