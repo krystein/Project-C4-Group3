@@ -165,18 +165,21 @@ a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #3498db;
+  background-color: #c82424;
   color: #fff;
   border: none;
-  border-radius: 50%;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
   font-size: 1.5em;
   padding: 10px;
   cursor: pointer;
+  z-index: 999;
   transition: background-color 0.3s;
 }
 
 #scrollUpBtn:hover {
-  background-color: #2980b9;
+  background-color: #c82424;
 }
 .hero {
   width: 100%;
